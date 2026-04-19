@@ -1,0 +1,43 @@
+# Local runtime and secrets
+.openclaw/
+private/
+*.env
+*.key
+*.pem
+
+# Stateful control-plane data
+memory/
+state/
+missions/logs/
+missions/state/
+missions/outbox/
+missions/registry.json
+missions/last-cycle.json
+missions/incidents.jsonl
+stack/INBOX.md
+stack/queue.json
+
+# Dev clutter and extracted assets
+node_modules/
+.venv/
+.venv-*/
+tmp/
+tmp-pdfextract/
+.openclaw-cli-images/
+*.log
+*.png
+*.jpg
+*.jpeg
+
+# Side workspaces
+worker-dev/
+worker-ops/
+worker-research/
+leomerville-portfolio/
+
+# Public-export cleanup patterns
+missions/slack/slack-*.md
+missions/slack-upload-test.txt
+missions/test-artifact*.txt
+missions/briefs/frank-*.md
+missions/briefs/portfolio-*.md
